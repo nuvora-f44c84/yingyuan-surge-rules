@@ -1,0 +1,7 @@
+# YingYuan CMS API hosts that require a proxy from mainland China.
+# Verified twice: 2026-08-10 (China Telecom/Unicom/Mobile vs US).
+# Bind this RULE-SET to your own proxy policy group; PROXY is not built in.
+
+DOMAIN,api.yzzy-api.com
+DOMAIN,ikunzy.net
+DOMAIN,moduzy.com

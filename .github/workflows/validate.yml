@@ -1,0 +1,17 @@
+name: Validate Surge rules
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out rules
+        uses: actions/checkout@v4
+      - name: Validate syntax, scope, and routing overlap
+        run: ruby scripts/validate_rules.rb

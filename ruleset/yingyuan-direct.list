@@ -1,0 +1,12 @@
+# YingYuan media hosts that require a mainland-China direct egress.
+# Verified: 2026-08-10. Scope and evidence: repository README.
+# This is a Surge RULE-SET: every non-comment line intentionally omits policy.
+
+DOMAIN-SUFFIX,fengbao11.com
+DOMAIN,lzcdn33v1.com
+DOMAIN-SUFFIX,phimgood.com
+DOMAIN-SUFFIX,ppqrrs.com
+DOMAIN-SUFFIX,ukubf3.com
+DOMAIN-SUFFIX,yzzy31-play.com
+DOMAIN-SUFFIX,yzzyvip-29.com
+DOMAIN-SUFFIX,zuidazym3u8.com

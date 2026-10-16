@@ -82,8 +82,8 @@ direct.product(proxy).each do |direct_rule, proxy_rule|
   fail_validation("semantic overlap: #{direct_rule} vs #{proxy_rule}") if overlap?(direct_rule, proxy_rule)
 end
 
-canonical_direct_url = 'https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list'
-canonical_proxy_url = 'https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list'
+canonical_direct_url = 'https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list'
+canonical_proxy_url = 'https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list'
 module_content = File.read(MODULE_PATH, encoding: 'UTF-8')
 readme = File.read(README_PATH, encoding: 'UTF-8')
 

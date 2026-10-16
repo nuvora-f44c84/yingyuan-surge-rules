@@ -14,20 +14,20 @@
 
 ```ini
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list,DIRECT
-RULE-SET,https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list,你的代理策略组名称
+RULE-SET,https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list,你的代理策略组名称
 ```
 
 第二行最后一项必须换成你自己的 Surge 代理节点或策略组名称。`PROXY` 不是 Surge 内建策略，不能在所有配置里通用。
 
-- [DIRECT 规则原始文件](https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list)
-- [代理规则原始文件](https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list)
-- [仅包含 DIRECT 规则的 Module](https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/modules/yingyuan-direct.sgmodule)
+- [DIRECT 规则原始文件](https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list)
+- [代理规则原始文件](https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-proxy.list)
+- [仅包含 DIRECT 规则的 Module](https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/modules/yingyuan-direct.sgmodule)
 
 也可以复制下面的地址到 Safari 打开，安装仅包含 DIRECT 规则的 Module：
 
 ```text
-surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2FRicadre%2Fyingyuan-surge-rules%2Fmain%2Fmodules%2Fyingyuan-direct.sgmodule
+surge:///install-module?url=https%3A%2F%2Fraw.githubusercontent.com%2Fnuvora-f44c84%2Fyingyuan-surge-rules%2Fmain%2Fmodules%2Fyingyuan-direct.sgmodule
 ```
 
 Surge 官方限制 Module 中的 Rule 只能使用 `DIRECT`、`REJECT` 和 `REJECT-TINYGIF`，不能引用用户自定义代理或策略组。因此 Module 只能完成媒体直连，三个 CMS API 的代理规则仍需手动加入主配置。

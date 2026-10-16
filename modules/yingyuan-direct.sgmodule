@@ -2,4 +2,4 @@
 #!desc=让已确认会拒绝境外出口的映源媒体 CDN 走 DIRECT；不启用 MITM，不包含 CMS API 代理规则。
 
 [Rule]
-RULE-SET,https://raw.githubusercontent.com/Ricadre/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/nuvora-f44c84/yingyuan-surge-rules/main/ruleset/yingyuan-direct.list,DIRECT
